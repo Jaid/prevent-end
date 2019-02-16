@@ -6,11 +6,11 @@ import {isEqual, takeRight, slice} from "lodash"
  * Prevents a string or an array from having a specified end
  * @example
  * import prevendEnd from "prevent-end"
- * prevendEnd("abcd", "cd")
+ * preventEnd("abcd", "cd")
  * // "ab"
  * @example
  * import prevendEnd from "prevent-end"
- * prevendEnd(["ab", "c" "d"], ["c", "d"])
+ * preventEnd(["ab", "c" "d"], ["c", "d"])
  * // ["ab"]
  * @function
  * @param {string|array} value String or array that should not end with specified value
