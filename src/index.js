@@ -1,47 +1,37 @@
 /** @module prevent-end */
 
-/**
- * @typedef valueGenerator
- * @type {function}
- * @param {string} value Original array entry
- * @param {number} index Index of the array entry (starts at 0)
- * @returns {*} Anything that will be the object entry value
- */
+import {isEqual, takeRight, slice} from "lodash"
 
 /**
- * Converts an array to an object with static keys and customizable values
+ * Prevents a string or an array from having a specified end
  * @example
- * import preventEnd from "prevent-end"
- * preventEnd(["a", "b"])
- * // {a: null, b: null}
+ * import prevendEnd from "prevent-end"
+ * prevendEnd("abcd", "cd")
+ * // "ab"
  * @example
- * import preventEnd from "prevent-end"
- * preventEnd(["a", "b"], "value")
- * // {a: "value", b: "value"}
- * @example
- * import preventEnd from "prevent-end"
- * preventEnd(["a", "b"], (key, index) => `value for ${key} #${index + 1}`)
- * // {a: "value for a #1", b: "value for b #2"}
+ * import prevendEnd from "prevent-end"
+ * prevendEnd(["ab", "c" "d"], ["c", "d"])
+ * // ["ab"]
  * @function
- * @param {string[]} array Keys for the generated object
- * @param {valueGenerator|*} [valueGenerator=null] Optional function that sets the object values based on key and index
- * @returns {object<string, *>} A generated object based on the array input
+ * @param {string|array} value String or array that should not end with specified value
+ * @param {string|array} badEnd The unwanted end value
+ * @returns {*} A generated object based on the array input
  */
-export default (array, valueGenerator = null) => {
-  if (!Array.isArray(array)) {
-    return {}
-  }
-  const object = {}
-  if (typeof valueGenerator === "function") {
-    let index = 0
-    for (const value of array) {
-      object[value] = valueGenerator(value, index)
-      index++
+export default (value, badEnd) => {
+  if (typeof value === "string") {
+    if (value.endsWith(badEnd)) {
+      return value.substr(0, value.length - badEnd.length)
     }
-  } else {
-    for (const value of array) {
-      object[value] = valueGenerator
-    }
+    return value
   }
-  return object
+  if (Array.isArray(value, badEnd)) {
+    if (!Array.isArray(badEnd)) {
+      badEnd = [badEnd]
+    }
+    if (isEqual(takeRight(value, badEnd.length), badEnd)) {
+      return slice(value, 0, value.length - badEnd.length)
+    }
+    return value
+  }
+  return value
 }

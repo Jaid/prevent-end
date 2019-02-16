@@ -13,7 +13,10 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "lodash.isequal": "^4.5.0"
+  },
   "devDependencies": {
     "babel-jest": "^24.1.0",
     "babel-preset-jaid": "^2.11.0",
