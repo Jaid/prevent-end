@@ -15,7 +15,7 @@ import {isEqual, takeRight, slice} from "lodash"
  * @function
  * @param {string|array} value String or array that should not end with specified value
  * @param {string|array} badEnd The unwanted end value
- * @returns {*} A generated object based on the array input
+ * @returns {*} Cleaned value
  */
 export default (value, badEnd) => {
   if (typeof value === "string") {
