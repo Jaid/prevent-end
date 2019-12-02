@@ -3,6 +3,15 @@
 
 Prevents a string or an array from ending with specified value.
 
+## Installation
+<a href='https://npmjs.com/package/prevent-end'><img alt='npm logo' src='https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.png' height=16/></a>
+```bash
+npm install --save prevent-end@^
+```
+<a href='https://yarnpkg.com/package/prevent-end'><img alt='Yarn logo' src='https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png' height=24/></a>
+```bash
+yarn add prevent-end@^
+```
 
 
 ## Try it out
