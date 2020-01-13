@@ -32,5 +32,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "prevent-end",
-  "description": "Prevents a string or an array from ending with specified value."
+  "description": "Prevents a string or an array from ending with specified value.",
+  "funding": "https://github.com/sponsors/jaid"
 }
