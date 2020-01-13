@@ -33,5 +33,9 @@
   },
   "name": "prevent-end",
   "description": "Prevents a string or an array from ending with specified value.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/prevent-end"
+  }
 }
