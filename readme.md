@@ -1,9 +1,9 @@
 # prevent-end
 
 
-<a href="https://raw.githubusercontent.com/Jaid/prevent-end/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/prevent-end?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/prevent-end/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fprevent-end%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/prevent-end/commits"><img src="https://img.shields.io/github/commits-since/Jaid/prevent-end/v1.0.7?style=flat-square&logo=github" alt="Commits since v1.0.7"/></a> <a href="https://github.com/Jaid/prevent-end/commits"><img src="https://img.shields.io/github/last-commit/Jaid/prevent-end?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/prevent-end/issues"><img src="https://img.shields.io/github/issues/Jaid/prevent-end?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/prevent-end"><img src="https://img.shields.io/npm/v/prevent-end?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/prevent-end/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/prevent-end?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/prevent-end"><img src="https://img.shields.io/npm/dm/prevent-end?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/prevent-end/master/license.txt"><img src="https://img.shields.io/github/license/jaid/prevent-end?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor prevent-end"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/prevent-end/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fprevent-end%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/prevent-end/commits"><img src="https://img.shields.io/github/commits-since/jaid/prevent-end/v1.0.7?style=flat-square&logo=github" alt="Commits since v1.0.7"/></a> <a href="https://github.com/jaid/prevent-end/commits"><img src="https://img.shields.io/github/last-commit/jaid/prevent-end?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/prevent-end/issues"><img src="https://img.shields.io/github/issues/jaid/prevent-end?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/prevent-end"><img src="https://img.shields.io/npm/v/prevent-end?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/prevent-end/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/prevent-end?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/prevent-end"><img src="https://img.shields.io/npm/dm/prevent-end?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Prevents a string or an array from ending with specified value.**
 
@@ -41,14 +41,13 @@ yarn add prevent-end@^1.0.7
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/prevent-end.git
+git clone git@github.com:jaid/prevent-end.git
 cd prevent-end
 npm install
 ```
