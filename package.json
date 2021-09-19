@@ -50,5 +50,6 @@
     "suffix",
     "util",
     "utility"
-  ]
+  ],
+  "type": "module"
 }
